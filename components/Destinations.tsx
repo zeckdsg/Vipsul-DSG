@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+
 import { motion } from 'framer-motion';
 import { GlassCard, SectionTitle } from './ui/GlassUI';
 import { ArrowUpRight } from 'lucide-react';
@@ -26,7 +27,7 @@ const destinations = [
   }
 ];
 
-const Destinations: React.FC = () => {
+const Destinations = () => {
   return (
     <section id="destinos" className="py-24 bg-slate-950 relative">
       <div className="container mx-auto px-4">

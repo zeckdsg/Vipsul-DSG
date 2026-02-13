@@ -1,8 +1,9 @@
-import React from 'react';
+"use client";
+
 import { motion } from 'framer-motion';
 import { GlassCard, PrimaryButton } from './ui/GlassUI';
 
-const FinalCTA: React.FC = () => {
+const FinalCTA = () => {
   return (
     <section className="relative min-h-screen flex items-center py-20">
       {/* Background */}

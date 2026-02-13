@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+
 import { MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 

@@ -1,10 +1,11 @@
-import React from 'react';
+"use client";
+
 import { motion } from 'framer-motion';
 import { GlassCard, PrimaryButton, SectionTitle } from './ui/GlassUI';
-import { CreditCard, CheckCircle2, ShieldCheck, Map, Plane, Clock, Star } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, Map, Plane, Clock, Star } from 'lucide-react';
 
 /* --- Payment Section --- */
-export const PaymentSection: React.FC = () => {
+export const PaymentSection = () => {
   return (
     <section className="py-24 bg-[#0f172a] relative overflow-hidden">
       <div className="absolute right-0 top-0 w-1/2 h-full bg-[#ed2643]/5 blur-[120px]" />
@@ -58,7 +59,7 @@ export const PaymentSection: React.FC = () => {
 };
 
 /* --- Social Proof --- */
-export const SocialProof: React.FC = () => {
+export const SocialProof = () => {
   return (
     <section id="depoimentos" className="py-24 relative bg-cover bg-fixed bg-center" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2670&auto=format&fit=crop')` }}>
       <div className="absolute inset-0 bg-slate-900/70 backdrop-blur-sm" />
@@ -89,7 +90,7 @@ export const SocialProof: React.FC = () => {
 };
 
 /* --- Credibility --- */
-export const Credibility: React.FC = () => {
+export const Credibility = () => {
   return (
     <section className="py-24 bg-slate-950">
       <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
@@ -136,7 +137,7 @@ export const Credibility: React.FC = () => {
 };
 
 /* --- How It Works --- */
-export const HowItWorks: React.FC = () => {
+export const HowItWorks = () => {
   return (
     <section id="como-funciona" className="py-24 relative overflow-hidden">
       {/* Background Image with Overlay */}
@@ -173,7 +174,7 @@ export const HowItWorks: React.FC = () => {
 };
 
 /* --- Urgency --- */
-export const Urgency: React.FC = () => {
+export const Urgency = () => {
   return (
     <section className="py-20 bg-[#0f172a]">
       <div className="container mx-auto px-4">

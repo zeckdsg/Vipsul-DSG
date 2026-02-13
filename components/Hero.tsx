@@ -1,9 +1,10 @@
-import React from 'react';
+"use client";
+
 import { motion } from 'framer-motion';
 import { MapPin, Calendar, User, Phone } from 'lucide-react';
 import { GlassCard, PrimaryButton } from './ui/GlassUI';
 
-const Hero: React.FC = () => {
+const Hero = () => {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with Overlay */}

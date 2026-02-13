@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
@@ -8,7 +9,7 @@ interface GlassCardProps {
   glow?: boolean;
 }
 
-export const GlassCard: React.FC<GlassCardProps> = ({ children, className = '', glow = false }) => {
+export const GlassCard = ({ children, className = '', glow = false }: GlassCardProps) => {
   return (
     <div
       className={`
@@ -26,7 +27,7 @@ interface PrimaryButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   children: React.ReactNode;
 }
 
-export const PrimaryButton: React.FC<PrimaryButtonProps> = ({ children, className = '', ...props }) => {
+export const PrimaryButton = ({ children, className = '', ...props }: PrimaryButtonProps) => {
   return (
     <button
       className={`
@@ -45,7 +46,7 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({ children, classNam
   );
 };
 
-export const SectionTitle: React.FC<{ children: React.ReactNode; subtitle?: string; light?: boolean }> = ({ children, subtitle, light = true }) => (
+export const SectionTitle = ({ children, subtitle, light = true }: { children: React.ReactNode; subtitle?: string; light?: boolean }) => (
   <div className="mb-12 text-center">
     <motion.h2 
       initial={{ opacity: 0, y: 20 }}
